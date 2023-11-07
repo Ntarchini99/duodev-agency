@@ -1,8 +1,8 @@
 import './index.css'
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Works from "./components/Works";
-import Reviews from "./components/Reviews";
+import Nosotros from "./components/Nosotros";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 
@@ -10,11 +10,12 @@ function App() {
 
   return (
     <div>
+      
       <Navbar />
-      <Hero />
+      <Home />
       <Works />
       <Services />
-      <Reviews />
+      <Nosotros />
       <Footer />
 
     </div>

@@ -1,6 +1,5 @@
-import { Input } from 'postcss';
 import React from 'react';
-import { RiMailFill, RiSmartphoneFill, RiMacFill } from "react-icons/ri";
+import { RiSmartphoneFill, RiMacFill } from "react-icons/ri";
 
 const Services = () => {
   return (

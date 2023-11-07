@@ -12,7 +12,6 @@ const Header = () => {
         <a href="#" className="text-2xl font-bold relative p-1 bg-white">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
       </div>
       <nav className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}>
-
         <a href="#" className='font-bold'>Inicio</a>
         <a href="#" className='font-bold'>Portfolio</a>
         <a href="#" className='font-bold'>Servicios</a>

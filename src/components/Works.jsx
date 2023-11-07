@@ -13,7 +13,7 @@ export const Works = () => {
       <div className='mb-8'>
         <h1 className='text-[14px] font-black'>ALGUNAS WEBS CREADAS POR NOSOTROS:</h1>
       </div>
-      {/* WORKS */}
+    
       <div className='grid grid-cols-1 xl:grid-cols-2 gap-8'>
         <div className='flex flex-col gap-2'>
           <img src={hallowen} className='w-full h-[500px] object-cover rounded-3xl' />
@@ -46,6 +46,7 @@ export const Works = () => {
             <p className='text-gray-500'>Diseño web</p>
             <h3 className='text-[17px]  font-bold'>Tienda online con base de datos Firebase para recibir las compras</h3>
           </div>
+
         </div>
       </div>
     </div>

@@ -1,13 +1,10 @@
 import React from 'react';
-import { RiCheckboxBlankCircleFill, RiInstagramLine, RiFacebookLine, RiTwitterLine, RiGithubLine } from "react-icons/ri";
 
 const Footer = () => {
-  return <footer className='bg-gray-700 p-8 xl:p-8 ' >
-    <div className='flex flex-col md:flex-row items-center justify-between gap-4 border-b border-gray-500 pb-8'>
-      {/* LOGO */}
+  return <footer className='bg-gray-700 p-4 xl:p-4 ' >
+    <div className='flex flex-col md:flex-row items-center justify-between gap-4 border-b border-gray-500 pb-4'>
       <div className='w-1/6 '>
       </div>
-      {/* Social MEDIA */}
       <nav className='flex  items-center gap-4'>
         <a href='https://www.instagram.com/duodevs_/' target='blank' className=' block  text-white p-4 bg-purple-500 rounded-full hover:bg-purple-400 transition-colors'>
           {""}<i className="fa-brands fa-instagram"></i>{""}
@@ -20,7 +17,7 @@ const Footer = () => {
       </nav>
     </div>
     <div className='mt-20'>
-      <p className='text-gray-300 text-center'> @ DuoDev - Derechos reservados 2023</p>
+      <p className='text-gray-300 text-center'> &copy; DuoDev - Derechos reservados 2023</p>
     </div>
   </footer>
 
