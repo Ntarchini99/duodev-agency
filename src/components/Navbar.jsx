@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 py-4 px-8 z-50">
       <div className="xl:w-1/6 text-center -mt-4">
-        <a href="#" className="text-2xl font-bold relative p-1 bg-white">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
+        <a href="#" className="text-2xl font-bold relative p-1">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
       </div>
       <nav className={`flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 ${showMenu ? "opacity-100" : "opacity-0 hidden"} xl:static`}>
         <button onClick={() => scrollToSection('Home')} className='font-bold' type="button">Inicio</button>
