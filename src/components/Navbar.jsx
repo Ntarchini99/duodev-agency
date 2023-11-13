@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <nav className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}>
         <button onClick={() => scrollToSection('Home')} className='font-bold' type="button">Inicio</button>
-        <button onClick={() => scrollToSection('Portfolio')} className='font-bold' type="button">Portfolio</button>
+        <button onClick={() => scrollToSection('Works')} className='font-bold' type="button">Portfolio</button>
         <button onClick={() => scrollToSection('Services')} className='font-bold' type="button">Servicios</button>
         <button onClick={() => scrollToSection('Nosotros')} className='font-bold' type="button">Nosotros</button>
       </nav>
