@@ -20,11 +20,11 @@ const Header = () => {
       <div className="xl:w-full xl:hidden">
         <button onClick={() => setShowMenu(!showMenu)} className='text-2xl p-2'>{showMenu ? <RiCloseLine /> : <RiMenu3Fill />}</button>
       </div>
-      <nav className={`bg-white w-[80%] md:w-[40%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 ${showMenu ? "absolute top-16 left-0" : "hidden xl:flex"}`}>
-        <button onClick={() => scrollToSection('Home')} className='font-bold' type="button">Inicio</button>
-        <button onClick={() => scrollToSection('Works')} className='font-bold' type="button">Portfolio</button>
-        <button onClick={() => scrollToSection('Services')} className='font-bold' type="button">Servicios</button>
-        <button onClick={() => scrollToSection('Nosotros')} className='font-bold' type="button">Nosotros</button>
+      <nav className={`bg-white w-[80%] md:w-[40%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center transition-all duration-500 z-50 ${showMenu ? "absolute top-16 left-0" : "hidden xl:flex"}`}>
+        <button onClick={() => scrollToSection('Home')} className='font-bold mb-2 xl:mb-0' type="button">Inicio</button>
+        <button onClick={() => scrollToSection('Works')} className='font-bold mb-2 xl:mb-0' type="button">Portfolio</button>
+        <button onClick={() => scrollToSection('Services')} className='font-bold mb-2 xl:mb-0' type="button">Servicios</button>
+        <button onClick={() => scrollToSection('Nosotros')} className='font-bold mb-2 xl:mb-0' type="button">Nosotros</button>
       </nav>
     </header>
   );
