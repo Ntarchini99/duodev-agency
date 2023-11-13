@@ -27,34 +27,34 @@ const Header = () => {
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
       </button>
       <nav
-        className={` w-full md:w-[80%] xl:w-full ${
+        className={`bg-white w-full md:w-[80%] xl:w-full ${
           showMenu ? "block" : "hidden"
         } md:flex md:justify-end md:items-center h-screen md:h-auto transition-all duration-500`}
       >
         <button
           onClick={() => scrollToSection('Home')}
-          className='font-bold py-2 md:py-0 md:px-4 md:ml-4'
+          className='font-bold py-2 md:py-0 md:px-4 md:ml-4 text-black' 
           type="button"
         >
           Inicio
         </button>
         <button
           onClick={() => scrollToSection('Works')}
-          className='font-bold py-2 md:py-0 md:px-4 md:ml-4'
+          className='font-bold py-2 md:py-0 md:px-4 md:ml-4 text-black'
           type="button"
         >
           Portfolio
         </button>
         <button
           onClick={() => scrollToSection('Services')}
-          className='font-bold py-2 md:py-0 md:px-4 md:ml-4'
+          className='font-bold py-2 md:py-0 md:px-4 md:ml-4 text-black'
           type="button"
         >
           Servicios
         </button>
         <button
           onClick={() => scrollToSection('Nosotros')}
-          className='font-bold py-2 md:py-0 md:px-4 md:ml-4'
+          className='font-bold py-2 md:py-0 md:px-4 md:ml-4 text-black'
           type="button"
         >
           Nosotros
