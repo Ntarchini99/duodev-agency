@@ -27,7 +27,7 @@ const Header = () => {
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
       </button>
       <nav
-        className={`bg-white w-full md:w-[80%] xl:w-full ${
+        className={` w-full md:w-[80%] xl:w-full ${
           showMenu ? "block" : "hidden"
         } md:flex md:justify-end md:items-center h-screen md:h-auto transition-all duration-500`}
       >
