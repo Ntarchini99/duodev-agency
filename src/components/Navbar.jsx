@@ -1,25 +1,34 @@
 import React, { useState } from 'react';
-import { RiCheckboxBlankCircleFill, RiMenu3Fill, RiCloseLine } from "react-icons/ri";
-import { Link } from 'react-router-dom';
-
+import {RiMenu3Fill} from "react-icons/ri";
 
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setShowMenu(false);
+    }
+  };
+
   return (
-    <header className=" flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
+    <header className={`flex items-center justify-between xl:justify-start w-full py-2 px-4 z-50 fixed top-0 bg-white shadow-md`}>
       <div className="xl:w-1/6 text-center -mt-4">
-        <a href="#" className="text-2xl font-bold relative p-1 bg-white">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
+        <a href="#" className="text-2xl font-bold relative p-1">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} </a>
       </div>
-      <nav className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}>
-        <a href="#" className='font-bold'>Inicio</a>
-        <a href="#" className='font-bold'>Portfolio</a>
-        <a href="#" className='font-bold'>Servicios</a>
-        <a href="#" className='font-bold'>Nosotros</a>
+      <div className="xl:w-full xl:hidden">
+        <button onClick={() => setShowMenu(!showMenu)} className='text-2xl p-2 bg-white'><RiMenu3Fill /></button>
+      </div>
+      <nav className={`bg-white w-[80%] md:w-[40%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center transition-all duration-500 z-50 ${showMenu ? "fixed top-0 left-0" : "hidden xl:flex"}`}>
+        <button onClick={() => scrollToSection('Home')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Inicio</button>
+        <button onClick={() => scrollToSection('Works')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500 `} type="button">Portfolio</button>
+        <button onClick={() => scrollToSection('Services')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Servicios</button>
+        <button onClick={() => scrollToSection('Nosotros')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Nosotros</button>
       </nav>
-      <button onClick={() => setShowMenu(!showMenu)} className='xl:hidden text-2xl p-2'>{showMenu ? <RiCloseLine /> : <RiMenu3Fill />}</button>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

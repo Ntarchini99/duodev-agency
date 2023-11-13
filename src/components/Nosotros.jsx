@@ -2,11 +2,11 @@ import React from 'react';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import jona from '../assets/img/jona.png';
 import naza from '../assets/img/naza.jpg';
-import logoo from '../assets/img/logoo.jpg'
+import logoo from '../assets/img/dd.jpg'
 
 const Nosotros = () => {
   return (
-    <div className='p-8 flex flex-col gap-8 bg-gray-100'>
+    <div id="Nosotros" className='p-8 flex flex-col gap-8 bg-gray-100'>
       <h1 className='text-[30px] text-center font-black'>Con el motivo de impulsar tu negocio</h1>
       <div className='flex justify-center'>
         <span className='text-5xl text-blue-500'>
