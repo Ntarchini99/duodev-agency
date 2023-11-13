@@ -17,7 +17,7 @@ const Header = () => {
       <div className="xl:w-1/6 text-center -mt-4">
         <a href="#" className="text-2xl font-bold relative p-1">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
       </div>
-      <nav className={`flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 ${showMenu ? "opacity-100" : "opacity-0 hidden"} xl:static`}>
+      <nav className={`flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 ${showMenu ? "opacity-0" : "opacity-0 hidden"} xl:static`}>
         <button onClick={() => scrollToSection('Home')} className='font-bold' type="button">Inicio</button>
         <button onClick={() => scrollToSection('Works')} className='font-bold' type="button">Portfolio</button>
         <button onClick={() => scrollToSection('Services')} className='font-bold' type="button">Servicios</button>
