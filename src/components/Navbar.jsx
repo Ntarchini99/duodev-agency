@@ -18,7 +18,7 @@ const Header = () => {
         <a href="#" className="text-2xl font-bold relative p-1">DuoDev<span className='text-blue-500 text-5xl'>.</span>{" "} <RiCheckboxBlankCircleFill className='absolute -left-3 -bottom-3 text-blue-500 -z-10' /></a>
       </div>
       <div className="xl:w-full xl:hidden">
-        <button onClick={() => setShowMenu(!showMenu)} className='text-2xl p-2 bg-white'>{showMenu ? <RiCloseLine /> : <RiMenu3Fill />}</button>
+        <button onClick={() => setShowMenu(!showMenu)} className='text-2xl p-2 bg-white h-full'>{showMenu ? <RiCloseLine /> : <RiMenu3Fill />}</button>
       </div>
       <nav className={`bg-white w-[80%] md:w-[40%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center transition-all duration-500 z-50 ${showMenu ? "absolute top-16 left-0" : "hidden xl:flex"}`}>
         <button onClick={() => scrollToSection('Home')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'}`} type="button">Inicio</button>
