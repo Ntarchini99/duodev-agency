@@ -8,7 +8,7 @@ import sketch from '../assets/icons/sketch.png';
 
 const Home = () => {
   return <section className='min-h-[90vh] grid grid-cols-1 xl:grid-cols-8'>
-    <div id="home" className='md:col-span-5 flex items-center justify-center p-8 xl:p-18 '>
+    <div id="Home" className='md:col-span-5 flex items-center justify-center p-8 xl:p-18 '>
       <div className='flex flex-col gap-6'>
         <h1 className='text-5xl xl:text-5xl font-bold xl:leading-[4rem]'>Porgramacion, Marketing y Redes Sociales {" "}
           <span className='text-blue-500 py-[11]   relative inline-block'>

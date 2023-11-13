@@ -3,7 +3,7 @@ import { RiSmartphoneFill, RiMacFill } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <div id="services" className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 p-8 md:p-12 xl:p-20 '>
+    <div id="Services" className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 p-8 md:p-12 xl:p-20 '>
       <div className='flex flex-col gap-4'>
         <h1 className='text-[20px] font-bold'>Comunicate con nosotros via WhatsApp, Email, o Instagram</h1>
         <p className='text-[15px] text-gray-500'>
