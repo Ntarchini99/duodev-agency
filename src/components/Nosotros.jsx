@@ -6,7 +6,7 @@ import logoo from '../assets/img/logoo.jpg'
 
 const Nosotros = () => {
   return (
-    <div className='p-8 flex flex-col gap-8 bg-gray-100'>
+    <div id="nosotros" className='p-8 flex flex-col gap-8 bg-gray-100'>
       <h1 className='text-[30px] text-center font-black'>Con el motivo de impulsar tu negocio</h1>
       <div className='flex justify-center'>
         <span className='text-5xl text-blue-500'>
