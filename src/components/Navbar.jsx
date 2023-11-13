@@ -20,7 +20,7 @@ const Header = () => {
       <div className="xl:w-full xl:hidden">
         <button onClick={() => setShowMenu(!showMenu)} className='text-2xl p-2'>{showMenu ? <RiCloseLine /> : <RiMenu3Fill />}</button>
       </div>
-      <nav className={`bg-white w-[100%] md:w-[90%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center transition-all duration-500 z-50 ${showMenu ? "absolute top-16 left-0 bg-white" : "hidden xl:flex"}`}>
+      <nav className={`bg-white w-[100%] md:w-[100%] xl:w-full h-full xl:static flex-1 flex flex-col xl:flex-row items-center justify-center transition-all duration-500 z-50 ${showMenu ? "absolute top-16 left-0 bg-white" : "hidden xl:flex"}`}>
         <button onClick={() => scrollToSection('Home')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'}`} type="button">Inicio</button>
         <button onClick={() => scrollToSection('Works')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'}`} type="button">Portfolio</button>
         <button onClick={() => scrollToSection('Services')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'}`} type="button">Servicios</button>
