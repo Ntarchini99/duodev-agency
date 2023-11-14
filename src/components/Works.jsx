@@ -9,7 +9,7 @@ import tiendaimport from '../assets/img/tiendaimport.png';
 
 export const Works = () => {
   return (
-    <div id="Works" className='p-8 xl:p-10 bg-gray-100 '>
+    <div id="Works" className='p-8 xl:p-10 bg-gray-100 nx'>
       <div className='mb-8'>
         <h1 className='text-[14px] font-black'>ALGUNAS WEBS CREADAS POR NOSOTROS:</h1>
       </div>

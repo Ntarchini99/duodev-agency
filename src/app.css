@@ -1,38 +1,143 @@
 .flex-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-image: url(./assets/img/one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Cambiado de row a column */
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 0; 
+  text-align: center;
+}
+
+.tagline {
+  color: #2196F3;
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 4rem;
+  margin-right: 0; 
+  text-align: center;
+}
+
+.description {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-right: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin-left: 15%;
+}
+
+.logo {
+  width: 550px;
+  height: auto;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  z-index: 20;
+  animation: float 2s infinite ease-in-out;
+}
+
+.whatsapp-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./assets/img/one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .content-container {
-    flex: 1;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 6px;
+    margin-left: 25px;
+    margin-top: 10%;
   }
   
   .heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-  }
-  
-  .agency-name {
-    white-space: nowrap;
+    margin-left: 0; 
+    text-align: center;
   }
   
   .tagline {
     color: #2196F3;
     display: block;
+    font-weight: bold;
     margin-top: 0.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-right: 0; 
+    text-align: center;
   }
   
   .description {
-    color: #888;
-    font-weight: bold ;
-    font-size: 1.125rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
   }
   
   .logo-container {
@@ -40,160 +145,140 @@
     justify-content: center;
     align-items: center;
     padding: 2px;
+    margin-left: 1%;
   }
   
   .logo {
-    width: 100%; 
+    width: 550px;
     height: auto;
-    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./assets/img/one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 15%;
   }
   
-    .fixed-button {
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      z-index: 20;
-    }
+  .heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 0; 
+    text-align: center;
+  }
+  
+  .tagline {
+    color: #2196F3;
+    display: block;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    margin-right: 0; 
+    text-align: center;
+  }
+  
+  .description {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-left: 1%;
+  }
+  
+  .logo {
+    width: 550px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 596px) {
+
+  .content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-left:2px;
+    margin-top: 15%;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 0; 
+    text-align: center;
+  }
+
+  .logo {
+    width: 520px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .content-container {
+    margin-top: 23%;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .description {
+
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 510px;
     
-    .whatsapp-button {
-      background-color: #4CAF50;
-      color: #fff;
-      border-radius: 50%;
-      padding: 0.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+
+  .content-container {
+    margin-top: 23%;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    width: 510px;
     
-    .whatsapp-icon {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-  
-    /* RESPONSIVE DESIGN */
-  
-    @media screen and (max-width: 768px) {
-    .flex-container {
-      flex-direction: column;
-      margin-top: 10%;
-    }
-  
-    .tagline {
-      font-size: 2.5rem; 
-    }
-  
-    .description {
-      font-size: 1rem; 
-    }
-    .logo {
-      width: 70%; 
-      height: auto;
-      object-fit: cover;
-    }
   }
-  
-  @media screen and (max-width: 425px) {
-    .flex-container {
-      flex-direction: column;
-      margin-top: -10%;
-    }
-  
-    .agency-name{
-      font-size: 2rem;
-    }
-  
-    .tagline {
-      margin-top: -3%;
-      font-size: 2rem; 
-    }
-  
-    .description {
-      font-size: 1rem; 
-    }
-    .logo {
-      margin-top: -30%;
-      width: 70%; 
-      height: auto;
-      object-fit: cover;
-    }
-  }
-  
-  @media screen and (max-width: 429px) {
-    .flex-container {
-      flex-direction: column;
-      margin-top: -15%;
-    }
-  
-    .agency-name{
-      font-size: 2.2rem;
-    }
-  
-    .tagline {
-      margin-top: -3%;
-      font-size: 2.1rem; 
-    }
-  
-    .description {
-      font-size: 1rem; 
-    }
-    .logo {
-      margin-top: -30%;
-      width: 70%; 
-      height: auto;
-      object-fit: cover;
-    }
-  }
-  
-  @media screen and (max-width: 379px) {
-    .flex-container {
-      flex-direction: column;
-      margin-top: -18%;
-    }
-  
-    .agency-name{
-      font-size: 1.9rem;
-    }
-  
-    .tagline {
-      margin-top: -3%;
-      font-size: 1.8rem; 
-    }
-  
-    .description {
-      font-size: 0.8rem; 
-    }
-    .logo {
-      margin-top: -30%;
-      width: 70%; 
-      height: auto;
-      object-fit: cover;
-    }
-  }
-  
-  @media screen and (max-width: 375px) {
-    .flex-container {
-      flex-direction: column;
-      margin-top: -15%;
-    }
-  
-    .agency-name{
-      font-size: 1.9rem;
-    }
-  
-    .tagline {
-      margin-top: -3%;
-      font-size: 1.8rem; 
-    }
-  
-    .description {
-      font-size: 0.8rem; 
-    }
-    .logo {
-      margin-top: -30%;
-      width: 70%; 
-      height: auto;
-      object-fit: cover;
-    }
-  }
+}

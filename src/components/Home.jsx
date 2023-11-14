@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/desktop-dos.png';
+import logo from '../assets/img/md-dos.png';
 import whatsapp from '../assets/img/whatsapp.png';
 
 const Home = () => {
