@@ -1,4 +1,5 @@
 import './index.css'
+import './app.css'
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Works from "./components/Works";
