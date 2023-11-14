@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/DuoDev.png';
+import logo from '../assets/img/desktop-dos.png';
 import whatsapp from '../assets/img/whatsapp.png';
 import figma from '../assets/icons/figma.png';
 import adobe from '../assets/icons/adobexd.png';
@@ -40,7 +40,7 @@ const Home = () => {
             alt="Logo"
           />
         </div>
-        <img
+        {/* <img
           src={figma}
           className='md:w-10 md:h-10 w-8 h-8 object-cover rounded-full border-l-4 border-gray-600 absolute top-[27%] right-[15%] xl:right-[20%]'
           alt="Figma"
@@ -59,7 +59,7 @@ const Home = () => {
           src={sketch}
           className='md:w-10 md:h-10 w-8 h-8 object-cover rounded-full absolute bottom-[25%] left-[3%] xl:left-[12%] -rotate-12'
           alt="Sketch"
-        />
+        /> */}
       </div>
     </section>
   );
