@@ -6,7 +6,7 @@ const Footer = () => {
           <a href='https://instagram.com/duodevagency?igshid=MzMyNGUyNmU2YQ==' target='blank' className='block text-white p-4 rounded-full'>
             {""}<i className="fa-brands fa-instagram"></i>{""}
           </a>
-          <a href='mailto:duodevagency@gmail.com' className='block text-white p-4 rounded-full'>
+          <a href='mailto:duodevagency@gmail.com' target='blank' className='block text-white p-4 rounded-full'>
                <i className="fa-regular fa-envelope"></i>
           </a>
 
