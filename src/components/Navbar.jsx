@@ -24,9 +24,9 @@ const Header = () => {
   <button onClick={() => scrollToSection('Home')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Inicio</button>
   <button onClick={() => scrollToSection('Works')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500 `} type="button">Portfolio</button>
   <button onClick={() => scrollToSection('Services')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Servicios</button>
+  <button onClick={() => scrollToSection('Form')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Contacto</button>
   <button onClick={() => scrollToSection('Nosotros')} className={`font-bold ${showMenu ? 'mb-2' : 'mr-4'} py-2 px-4 text-dark-500`} type="button">Nosotros</button>
 </nav>
-
     </header>
   );
 };
