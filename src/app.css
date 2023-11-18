@@ -167,6 +167,91 @@ font-size: 3rem;
 
 /* RESPONSIVE DESIGN */
 
+@media screen and (max-width: 890px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(./assets/img/one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 10%;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 0; 
+    text-align: center;
+  }
+  
+  .tagline {
+    color: #2196F3;
+    display: block;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    margin-right: 0; 
+    text-align: center;
+  }
+  
+  .description {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-left: 1%;
+  }
+  
+  .logo {
+    width: 550px;
+    height: auto;
+  }
+
+  .contact{
+    margin: 25px;
+  }
+  .contact form .input-box input {
+    width: 48%;
+    margin: 7px;
+  }
+}
+
+.contact form textarea {
+  resize: none;
+  margin: 7px;
+  width: 98%;
+}
+
+.contact form .btn {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: .6rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+
+}
+
 @media screen and (max-width: 768px) {
   .flex-container {
     display: flex;
