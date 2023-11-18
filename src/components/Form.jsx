@@ -1,7 +1,6 @@
-// ContactForm.jsx
 import React, { useState } from 'react';
 
-const Form = () => {
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,7 +20,11 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('Datos del formulario enviados:', formData);
+    const { name, email, phone, headingEmail, message } = formData;
+
+    const mailtoLink = `mailto:duodevagency@gmail.com?subject=${encodeURIComponent(headingEmail)}&body=${encodeURIComponent(`Nombre: ${name}%0D%0AEmail: ${email}%0D%0ATeléfono: ${phone}%0D%0AMensaje: ${message}`)}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -81,4 +84,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default ContactForm;
